@@ -28,12 +28,12 @@ export const Main = () => {
 
   return (
     <>
-      {isLoading ? (
-        <div></div>
-      ) : (
-        <>
-          <div className={styles.container}>
-            <Header />
+      <div className={styles.container}>
+        <Header />
+        {isLoading ? (
+          <div></div>
+        ) : (
+          <>
             <div className={styles.images}>
               {data?.pages.map((group, i) => (
                 <div className={styles.row} key={i}>
@@ -46,9 +46,9 @@ export const Main = () => {
             <div className={styles.loading}>
               {isFetchingNextPage && "... загружаем еще котиков ..."}
             </div>
-          </div>
-        </>
-      )}
+          </>
+        )}
+      </div>
     </>
   );
 };
