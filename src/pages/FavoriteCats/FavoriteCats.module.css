@@ -1,0 +1,26 @@
+.images {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  padding-top: 32px;
+  padding-inline: 46px;
+}
+
+@media (max-width: 1024px) {
+  .images {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .images {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 426px) {
+  .images {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding-inline: 30px;
+  }
+}

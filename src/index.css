@@ -1,0 +1,18 @@
+#root,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto.ttf") format("truetype");
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}

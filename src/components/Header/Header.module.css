@@ -1,0 +1,39 @@
+.container {
+  background-color: #2196f3;
+  height: 64px;
+  box-shadow: 0px 4px 4px 0px #0000003d;
+}
+
+.nav {
+  display: flex;
+  padding-inline: 62px;
+  height: 100%;
+  text-align: center;
+}
+
+.nav_main {
+  width: 120px;
+  padding-block: 23px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.nav_favorite_cats {
+  width: 173px;
+  padding-block: 23px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.nav_active {
+  background-color: #1e88e5;
+  color: white;
+}
+
+@media (max-width: 426px) {
+  .nav {
+    padding-inline: 46px;
+  }
+}
